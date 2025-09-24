@@ -26,3 +26,10 @@ cztery1.style.backgroundColor = 'pink'
 cztery1.style.textAlign = 'center'
 const piec = document.getElementsByTagName('h1')
 piec[3].remove()
+const szesc = document.createElement('p')
+const szesc1 = document.createElement('p')
+szesc.innerHTML = '<i>Pochylony tekst</i>'
+szesc1.innerText = '<i>Pochylony tekst</i>'
+let szesc2 = document.querySelector('header')
+szesc2.appendChild(szesc)
+szesc2.appendChild(szesc1)
