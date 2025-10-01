@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>1.</p>
+        <textarea name="pierwszy" id="pierwszy" onfocus="document.getElementById('pierwszy').style.backgroundColor = 'yellow'">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi dignissimos non aperiam. Qui et id molestiae impedit explicabo sed? Expedita amet rerum deserunt sequi magni eaque, deleniti labore, perspiciatis sint atque repellendus distinctio officiis incidunt optio totam corporis odio ea nobis ullam fuga, molestias sapiente voluptates. Corporis perspiciatis in maxime itaque sapiente facilis rem quae iure assumenda suscipit porro harum maiores, facere dolore tenetur voluptate quos! Sed numquam consequuntur ipsa unde, facere culpa ad eveniet illum dolorem aliquid vero deserunt assumenda voluptatum deleniti, fugit totam, harum quam cupiditate autem quaerat vitae itaque neque. Odio provident possimus impedit esse et ratione aspernatur atque non adipisci animi saepe fugiat, omnis doloribus voluptate accusamus voluptas quo eligendi nisi voluptatem laborum sint explicabo autem. Dolore, totam corrupti dignissimos deleniti omnis maxime asperiores ullam earum minus debitis laborum quis dolorem iste alias. Magni soluta explicabo cumque exercitationem quo molestiae, ipsum rem! Repellendus cupiditate accusantium tempore.</textarea>
+    </div>
+    <p>2.</p>
+    <p><input type="text"  id="blur" onblur="this.value=this.value.toUpperCase()"></p>
+    <p>3.</p>
+    <p>
+        <select name="wybor" id="wybor" onchange="this.style.color = this.value">
+            <option value="black">black</option>
+            <option value="brown">brown</option>
+            <option value="blue">blue</option>
+            <option value="blueviolet">blueviolet</option>
+            <option value="blurywood">blurywood</option>
+            <option value="bisque">bisque</option>
+        </select>
+    </p>
+    <p>4.</p>
+    <p onclick="this.style.fontSize=this.style.fontSize = 'xx-large'" ondblclick="this.style.fontSize= this.style.fontSize = 'medium'">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa quos aliquid quibusdam! Ipsa natus quis at odio obcaecati debitis, vero, explicabo quaerat enim reprehenderit cumque molestias non ipsam delectus nesciunt cupiditate ab ea et quisquam molestiae! Blanditiis enim at ipsum. Fuga sequi earum unde non, aperiam aspernatur itaque quibusdam.
+    </p>
+    <p>5.</p>
+    <div>
+        <img src="elektrykdobrze.jpg" oncontextmenu="alert(this.src)">
+    </div>
+    <p>6.</p>
+    <div>
+        <input id="orginal" type="text" onkeyup="document.getElementById('kopia').innerText = document.getElementById('orginal').value">
+        <p id="kopia"></p>
+    </div>
+    <p>7.</p>
+    <h1 style="color: green;" id="naglowek" onmouseout="document.getElementById('naglowek').style.textShadow = 'none'" onmouseover="document.getElementById('naglowek').style.textShadow = '2px 2px 5px green'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis itaque iure quia natus ad sed provident aliquam illo ab.</h1>
+</body>
+</html>

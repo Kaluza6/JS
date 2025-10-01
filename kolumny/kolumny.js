@@ -33,12 +33,3 @@ szesc1.innerText = '<i>Pochylony tekst</i>'
 let szesc2 = document.querySelector('header')
 szesc2.appendChild(szesc)
 szesc2.appendChild(szesc1)
-let siedem = document.createElement('section')
-console.log[dwa]
-dwa[3].style.border = "2px dotted blue"
-dwa[3].style.paddingTop = "10px"
-dwa[3].style.paddingBottom = "10px"
-dwa[3].style.paddingRight = "20px"
-dwa[3].style.paddingLeft = "20px"
-siedem.textContent = "Zderzak"
-document.querySelector('body').appendChild(siedem)
