@@ -3,41 +3,43 @@ let wl2 = document.getElementById("wl2")
 let wyl1 = document.getElementById("wyl1")
 let wyl2 = document.getElementById("wyl2")
 let wlwyl3 = document.getElementById("wlwyl3")
+let obrazek = document.getElementById('obrazek')
+let twlwyl3 = document.getElementById('twlwyl3')
 
 wl1.addEventListener('click', function() {
-  document.getElementById('obrazek').src = 'żarówawł.jpg'; 
-  document.getElementById('wl2').checked = true; 
-  document.getElementById('wyl2').checked = false;
-  document.getElementById('wlwyl3').checked = true;
-  document.getElementById('twlwyl3').innerText = "Włączona"
+  obrazek.src = 'żarówawł.jpg'; 
+  wl2.checked = true; 
+  wyl2.checked = false;
+  wlwyl3.checked = true;
+  twlwyl3.innerText = "Włączona"
 });
 
 wyl1.addEventListener('click', function() {
-  document.getElementById('obrazek').src = 'żarówawył.jpg'; 
-  document.getElementById('wyl2').checked = true; 
-  document.getElementById('wl2').checked = false; 
-    document.getElementById('wlwyl3').checked = false;
-  document.getElementById('twlwyl3').innerText = "Wyłączona"
+  obrazek.src = 'żarówawył.jpg'; 
+  wyl2.checked = true; 
+  wl2.checked = false; 
+  wlwyl3.checked = false;
+  twlwyl3.innerText = "Wyłączona"
 });
 wl2.addEventListener('click', function() {
-  document.getElementById('obrazek').src = 'żarówawł.jpg'; 
-    document.getElementById('wlwyl3').checked = true;
-  document.getElementById('twlwyl3').innerText = "Włączona"
+  obrazek.src = 'żarówawł.jpg'; 
+  wlwyl3.checked = true;
+  twlwyl3.innerText = "Włączona"
 });
 wyl2.addEventListener('click', function() {
-  document.getElementById('obrazek').src = 'żarówawył.jpg'; 
-      document.getElementById('wlwyl3').checked = false;
-  document.getElementById('twlwyl3').innerText = "Wyłączona"
+  obrazek.src = 'żarówawył.jpg'; 
+  wlwyl3.checked = false;
+  twlwyl3.innerText = "Wyłączona"
 });
 wlwyl3.addEventListener('click', function() {
-    console.log(wlwyl3.checked)
-    if (wlwyl3.checked = true){
-  document.getElementById('obrazek').src = 'żarówawł.jpg'; 
-    document.getElementById('twlwyl3').innerText = "Włączona"
-      document.getElementById('wl2').checked = true; 
+    if (wlwyl3.checked == true){
+      obrazek.src = 'żarówawł.jpg'; 
+      twlwyl3.innerText = "Włączona"
+      wl2.checked = true; 
     } else {
-       document.getElementById('obrazek').src = 'żarówawył.jpg';    
-         document.getElementById('twlwyl3').innerText = "Wyłączona"
-           document.getElementById('wyl2').checked = true; 
+      obrazek.src = 'żarówawył.jpg';    
+      twlwyl3.innerText = "Wyłączona"
+      wyl2.checked = true; 
+      wlwyl3.checked = false
     }
 })
