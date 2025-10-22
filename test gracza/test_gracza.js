@@ -42,6 +42,7 @@ odpowiedz1.addEventListener("click", function(){
     prompt("Wpisz odpowiedź")
     if(prompt == odp1.innerText){
         alert("Poprawna odpowiedź!")
+        odp1.style.display = "block"
     } else{
         alert("Błędna odpowiedź")
     }
