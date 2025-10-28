@@ -13,17 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
       hint.hidden = false;
 
       if (klik == 1) {
-        link.innerText = "▣";
+        link.innerHTML = "&blk34;";
         hint.innerText = "*".repeat(tekst.length) + " (" + tekst.length + ")";
       }
       else if (klik == 2) {
-        link.innerText = "▦";
+        link.innerText = "&blk12;";
         let nowy = tekst.replace(/./g, "*");
         nowy = tekst[0] + nowy.slice(1);
         hint.innerText = nowy + " (" + tekst.length + ")";
       }
       else if (klik == 3) {
-        link.innerText = "▤";
+        link.innerText = "&blk14;";
         let nowy = tekst.replace(/./g, "*");
         nowy = tekst[0] + nowy.slice(1, -1) + tekst.slice(-1);
         hint.innerText = nowy + " (" + tekst.length + ")";
