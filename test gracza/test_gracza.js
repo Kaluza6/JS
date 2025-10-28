@@ -40,10 +40,13 @@ let pod8 = document.getElementById("pod8")
 
 odpowiedz1.addEventListener("click", function(){
     prompt("Wpisz odpowiedź")
-    if(prompt == odp1.innerText){
+    if(prompt = "lag"){
         alert("Poprawna odpowiedź!")
-        odp1.style.display = "block"
+        odp1.innerText = "LAG"
     } else{
         alert("Błędna odpowiedź")
     }
+})
+podpowiedz1.addEventListener("click", function(){
+    podpowiedz1
 })
