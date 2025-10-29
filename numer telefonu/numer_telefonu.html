@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blur{
+            filter: blur(10px);
+        }
+        .nblur{
+            filter: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Numer telefonu: 12<span id="jeden">3</span>-<span id="dwa">456</span>-<span id="trzy">789</span></h1>
+    <input type="checkbox" name="caly" id="caly" onclick="tak()" checked><label for="caly">Pokaż cały numer telefonu</label>
+    <script>function tak(){
+        document.getElementById('jeden').classList.toggle("blur")
+        document.getElementById('dwa').classList.toggle("blur")
+        document.getElementById('trzy').classList.toggle("blur")
+    }
+    </script>
+</body>
+</html>
