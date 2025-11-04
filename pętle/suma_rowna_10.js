@@ -4,7 +4,11 @@ let wybrane=0
 for(x=100; x<=999; x++){
     let liczba = document.createElement('p')
     liczby.appendChild(liczba)
+    if(x===999){
+        liczba.innerText=x+"."
+    } else {
     liczba.innerText = x+", "
+    }
     liczba.style.display = "inline"
     let setki = Math.floor(x/100)
     let dziesiatki = Math.floor((x%100)/10)

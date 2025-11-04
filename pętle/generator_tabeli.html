@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1{
+        text-decoration: underline wavy red;
+    }
+    input{
+        width: 100px;
+    }
+    div{
+        padding: 10px;
+        border: 4px double red;
+        width: auto;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    td{
+        border: 1px solid red;
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Generator tabeli HTML</h1>
+    <div>
+        <label for="kolumny">Liczba kolumn:</label><input type="number" name="kolumny" id="kolumny" min="0" max="500">
+        <label for="wiersze">Liczba wierszy:</label><input type="number" name="wiersze" id="wiersze" min="0" max="500">
+        <button id="generuj">Generuj</button>
+    </div>
+    <br>
+    <table id="tabela"></table>
+    <script src="generator_tabeli.js"></script>
+</body>
+</html>
