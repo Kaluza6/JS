@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 15px;
+             text-align: center;
+             border: 1px solid gray;
+             border-radius: 10px;
+             margin: 12px;
+
+        }
+        #jeden, #dwa{
+            display: inline-block;
+        }
+        p{
+            border-bottom: 2px solid black;
+            text-align: right;
+        }
+        #kaat{
+            width: 70px;
+        }
+        #zegar{
+            border: 3px solid black;
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            vertical-align: middle;
+            align-items: center;
+        }
+        #godzina{
+            border: 3px solid black;
+            width: 0px;
+            height: 60px;
+            border-radius: none;
+            padding: none;
+            margin-left: 100px;
+            text-align: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Miarę kąta między wskazówką minutową a godzinową można obliczyć według wzoru: <br>
+        <img src="task_689.png" alt="">
+    </div>
+    <div id="jeden">
+Godziny h &isin; [0,11] <br>
+<input type="range" name="godz" id="godz" min="0" max="11"><br>
+<p id="lgodz"></p>
+    </div>
+    <div id="dwa">
+Minuty m &isin; [0,60] <br>
+<input type="range" name="minuty" id="minuty" min="0" max="60"><br>
+<p id="lmin"></p>
+    </div>
+    <div id="zegar">
+        <p id="godzina">
+
+        </p>
+    </div>
+    <div id="kaat">
+        Kąt
+        <p id="kat"></p>
+    </div>
+    <script src="zegar.js"></script>
+</body>
+</html>
