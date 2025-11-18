@@ -3,6 +3,7 @@ let lgodz = document.getElementById('lgodz')
 let minuty = document.getElementById('minuty')
 let lmin = document.getElementById('lmin')
 let kat = document.getElementById('kat')
+let zegar = document.getElementById('zegar')
 Math.abs(30*godz.value-(11*minuty.value)/2)
 godz.value=0
 minuty.value=0
