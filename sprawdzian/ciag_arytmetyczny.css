@@ -1,0 +1,21 @@
+body{
+    background-color: lightyellow;
+    color: lightcoral;
+    font-family: Verdana;
+    font-size: 16px;
+}
+button, input{
+    background-color: lightgoldenrodyellow;
+    color: brown;
+    border: 2px solid coral;
+}
+fieldset{
+    border: 2px solid coral;
+    display: inline-block;
+}
+button{
+    cursor: pointer;
+}
+input{
+    width: 100px;
+}
